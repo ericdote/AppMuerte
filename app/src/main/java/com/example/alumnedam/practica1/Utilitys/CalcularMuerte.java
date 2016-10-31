@@ -18,7 +18,7 @@ public class CalcularMuerte {
         int edad;
         do {
             edad = (rnd.nextInt((100 - Edad) + 1));
-        } while(edad > Edad);
+        } while(edad < Edad);
         return edad;
     }
 }
