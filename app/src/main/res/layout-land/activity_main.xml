@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fog">
+
+    <TextView
+        android:text="Nombre:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:id="@+id/tvNombre"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tvNombre"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/etNombre"
+        android:hint="Introduce tu nombre"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <TextView
+        android:text="Edad:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNombre"
+        android:layout_toStartOf="@+id/etNombre"
+        android:layout_marginTop="28dp"
+        android:id="@+id/tvEdad"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/etNombre"
+        android:layout_alignEnd="@+id/etNombre"
+        android:layout_marginTop="11dp"
+        android:id="@+id/etEdad"
+        android:hint="Ex: 20"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <RadioGroup android:id="@+id/GrbGrupo1"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:checkedButton="@+id/rdMujer"
+        android:layout_alignTop="@+id/tvSexo"
+        android:layout_alignStart="@+id/etEdad">
+
+        <RadioButton
+            android:text="@string/hombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbHombre"
+            android:layout_alignBaseline="@+id/tvSexo"
+            android:layout_alignBottom="@+id/tvSexo"
+            android:layout_alignStart="@+id/etEdad"
+            android:checked="false"
+            android:duplicateParentState="false"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/background_dark"/>
+
+        <RadioButton
+            android:text="@string/mujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdMujer"
+            android:layout_below="@+id/tvEdad"
+            android:layout_toEndOf="@+id/GrbGrupo1"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/background_dark"/>
+    </RadioGroup>
+
+    <TextView
+        android:text="Sexo:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/tvSexo"
+        android:layout_below="@+id/etEdad"
+        android:layout_alignEnd="@+id/tvEdad"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <CheckBox
+        android:text="@string/alcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbAlcohol"
+        android:layout_below="@+id/cbDrogas"
+        android:layout_alignStart="@+id/cbDrogas"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <CheckBox
+        android:text="@string/mujeres_hombres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbMujHom"
+        android:layout_below="@+id/cbAlcohol"
+        android:layout_alignStart="@+id/cbAlcohol"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <CheckBox
+        android:text="Drogas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbDrogas"
+        android:layout_alignBaseline="@+id/tvVicios"
+        android:layout_alignBottom="@+id/tvVicios"
+        android:layout_alignStart="@+id/GrbGrupo1"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:id="@+id/btnCalcula"
+        android:layout_alignBottom="@+id/cbMujHom"
+        android:layout_toEndOf="@+id/etEdad"
+        android:text="@string/cuando_voy_a_morir" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/death"
+        android:id="@+id/imageView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/btnCalcula"
+        android:layout_alignTop="@+id/btnCalcula" />
+
+    <TextView
+        android:text="Vicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/tvVicios"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/GrbGrupo1"
+        android:layout_alignStart="@+id/tvEdad" />
+
+</RelativeLayout>

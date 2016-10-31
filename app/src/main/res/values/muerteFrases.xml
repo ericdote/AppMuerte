@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="muerte">
+        <item> se paso con el deporte, se fue a correr para variar un dia mas
+            y a los 6m de salir de casa murio atropellado por un triciclo a sus </item>
+        <item>
+            la noche de Halloween fue acosado por un payaso asesino, que al realizar su broma
+            tipica americana, le peto la patata a sus
+        </item>
+        <item>
+             sufrio un derrame al encender la television y ver que estaba puesto Salvame a sus
+        </item>
+        <item>
+             desperto en medio del bosque despues de una borrachera, al no saber donde estaba comenzo a andar
+            y ante una niebla se cayo por un barranco a sus
+        </item>
+
+    </string-array>
+
+</resources>

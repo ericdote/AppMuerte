@@ -16,14 +16,15 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:id="@+id/tvMuerte"
-        android:maxWidth="210dp"
-        android:layout_marginTop="88dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="79dp"
+        android:maxWidth="350dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginStart="131dp"
         android:autoText="false"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
-        android:textStyle="normal|bold" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false" />
 
 </RelativeLayout>

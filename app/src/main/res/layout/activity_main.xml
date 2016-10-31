@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -8,7 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.alumnedam.practica1.Principal.MainActivity">
+    tools:context="com.example.alumnedam.practica1.Principal.MainActivity"
+    android:background="@drawable/fog">
 
     <EditText
         android:layout_width="wrap_content"
@@ -20,33 +22,11 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="10dp"
         android:id="@+id/etNombre"
-        android:hint="Introduce tu nombre" />
+        android:hint="Introduce tu nombre"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
 
-    <TextView
-        android:text="@string/nombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:id="@+id/tvNombre"
-        android:layout_alignBaseline="@+id/etNombre"
-        android:layout_alignBottom="@+id/etNombre"
-        android:layout_alignParentStart="true" />
-
-
-    <EditText
-    android:id="@+id/etxt_fromdate"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_weight=".5"
-    android:hint="@string/from_date" />
-
-    <TextView
-        android:text="@string/vicios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvVicios"
-        android:layout_above="@+id/cbMujHom"
-        android:layout_alignStart="@+id/tvNombre" />
 
     <Button
         android:text="@string/cuando_voy_a_morir"
@@ -55,24 +35,70 @@
         android:id="@+id/btnCalcula"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/etNombre"
-        android:layout_marginBottom="67dp" />
+        android:layout_marginBottom="67dp"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
 
-    <CheckBox
-        android:text="@string/alcohol"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cbAlcohol"
-        android:layout_below="@+id/etxt_fromdate"
-        android:layout_alignStart="@+id/cbMujHom"
-        android:layout_marginTop="69dp" />
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Ex: 20 años"
+        android:id="@+id/etEdad"
+        android:layout_below="@+id/etNombre"
+        android:layout_alignStart="@+id/cbDrogas"
+        android:layout_marginTop="15dp"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <TextView
+        android:text="@string/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:id="@+id/tvNombre"
+        android:layout_alignBaseline="@+id/etNombre"
+        android:layout_alignBottom="@+id/etNombre"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <TextView
+        android:text="@string/edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEdad"
+        android:hint="Introduce tu edad"
+        android:layout_alignBaseline="@+id/etEdad"
+        android:layout_alignBottom="@+id/etEdad"
+        android:layout_alignStart="@+id/tvNombre"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <TextView
+        android:text="@string/sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSexo"
+        android:layout_alignTop="@+id/GrbGrupo1"
+        android:layout_alignStart="@+id/tvEdad"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
 
     <RadioGroup android:id="@+id/GrbGrupo1"
         android:orientation="horizontal"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:checkedButton="@+id/rdMujer"
-        android:layout_above="@+id/cbAlcohol"
-        android:layout_alignStart="@+id/etEdad">
+        android:layout_below="@+id/etEdad"
+        android:layout_alignStart="@+id/etNombre"
+        android:layout_marginTop="10dp">
 
         <RadioButton
         android:text="@string/hombre"
@@ -83,7 +109,10 @@
         android:layout_alignBottom="@+id/tvSexo"
         android:layout_alignStart="@+id/etEdad"
         android:checked="false"
-        android:duplicateParentState="false" />
+        android:duplicateParentState="false"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/background_dark"/>
 
         <RadioButton
             android:text="@string/mujer"
@@ -92,25 +121,45 @@
             android:id="@+id/rdMujer"
             android:layout_below="@+id/tvEdad"
             android:layout_toEndOf="@+id/GrbGrupo1"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/background_dark" />
     </RadioGroup>
 
     <TextView
-        android:text="@string/sexo"
+        android:text="@string/vicios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvSexo"
-        android:layout_alignTop="@+id/GrbGrupo1"
-        android:layout_alignEnd="@+id/tvVicios" />
+        android:id="@+id/tvVicios"
+        android:layout_alignBaseline="@+id/cbAlcohol"
+        android:layout_alignBottom="@+id/cbAlcohol"
+        android:layout_alignStart="@+id/tvSexo"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
 
     <CheckBox
         android:text="Drogas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/cbDrogas"
-        android:layout_alignBottom="@+id/cbAlcohol"
-        android:layout_alignStart="@+id/cbAlcohol"
-        android:layout_marginBottom="28dp" />
+        android:layout_below="@+id/GrbGrupo1"
+        android:layout_alignStart="@+id/GrbGrupo1"
+        android:layout_marginTop="36dp" android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
+
+    <CheckBox
+        android:text="@string/alcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbAlcohol"
+        android:layout_below="@+id/cbDrogas"
+        android:layout_alignStart="@+id/cbDrogas"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
 
     <CheckBox
         android:text="@string/mujeres_hombres"
@@ -118,28 +167,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/cbMujHom"
         android:layout_below="@+id/cbAlcohol"
-        android:layout_alignEnd="@+id/GrbGrupo1" />
+        android:layout_alignStart="@+id/cbAlcohol"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_dark"/>
 
-    <TextView
-        android:text="@string/edad"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvEdad"
-        android:hint="Introduce tu edad"
-        android:layout_alignBaseline="@+id/etxt_fromdate"
-        android:layout_alignBottom="@+id/etxt_fromdate"
-        android:layout_alignStart="@+id/tvNombre"
-        android:layout_toStartOf="@+id/etNombre" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_alignBottom="@+id/tvEdad"
-        android:layout_alignEnd="@+id/etNombre"
-        android:layout_marginBottom="19dp"
-        android:hint="Ex: 20 años"
-        android:id="@+id/etEdad" />
+        app:srcCompat="@drawable/death"
+        android:id="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnCalcula"
+        android:layout_toEndOf="@+id/btnCalcula" />
 
 </RelativeLayout>
