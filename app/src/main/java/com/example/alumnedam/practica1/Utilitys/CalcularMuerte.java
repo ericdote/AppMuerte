@@ -15,8 +15,10 @@ public class CalcularMuerte {
 
     public int calculaMuerte(int Edad) {
         Random rnd = new Random();
-        int edad = (rnd.nextInt((100 - Edad) + 1));
-
+        int edad;
+        do {
+            edad = (rnd.nextInt((100 - Edad) + 1));
+        } while(edad > Edad);
         return edad;
     }
 }
