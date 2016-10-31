@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cuando vas a morir</string>
+    <string name="edad">Edad:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="mujer">Mujer</string>
+    <string name="hombre">Hombre</string>
+    <string name="vicios">Vicios:</string>
+    <string name="drogas">Drogas</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="mujeres_hombres">Mujeres/Hombres</string>
+    <string name="cuando_voy_a_morir">Cuando voy a morir</string>
+    <string name="from_date">From Date</string>
+
+
+</resources>
