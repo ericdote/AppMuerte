@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             CheckBox cbAlcohol = (CheckBox) findViewById(R.id.cbAlcohol);
             CheckBox cbMujHom = (CheckBox) findViewById(R.id.cbMujHom);
 
-            if (etNombre.getText().toString().equals("") && etEdad.getText().toString().equals("")){
+            if (etNombre.getText().toString().equals("") || etEdad.getText().toString().equals("")){
                 Toast.makeText (this, "Introdueix valors", Toast.LENGTH_LONG).show();
 
             } else {

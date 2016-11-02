@@ -28,7 +28,7 @@
         android:layout_marginStart="31dp"
         android:layout_marginTop="11dp"
         android:id="@+id/etNombre"
-        android:hint="Introduce tu nombre"
+        android:hint="@string/introduce_tu_nombre"
         android:textStyle="normal|bold"
         android:textSize="14sp"
         android:textColor="@android:color/background_dark"/>
@@ -54,7 +54,7 @@
         android:layout_alignEnd="@+id/etNombre"
         android:layout_marginTop="11dp"
         android:id="@+id/etEdad"
-        android:hint="Ex: 20"
+        android:hint="@string/ex_20"
         android:textStyle="normal|bold"
         android:textSize="14sp"
         android:textColor="@android:color/background_dark"/>

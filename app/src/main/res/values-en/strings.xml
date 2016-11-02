@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">When you gonna die</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="cuando_voy_a_morir">When you gonna die</string>
+    <string name="drogas">Drugs</string>
+    <string name="edad">Age:</string>
+    <string name="hombre">Man</string>
+    <string name="mujer">Woman</string>
+    <string name="mujeres_hombres">Womans/Mans</string>
+    <string name="nombre">Name:</string>
+    <string name="sexo">Sex:</string>
+    <string name="vicios">Addictions:</string>
+    <string name="anos">years</string>
+    <string name="introduce_tu_nombre">Enter your name</string>
+    <string name="ex_20_a_os">Ex: 20 years</string>
+</resources>

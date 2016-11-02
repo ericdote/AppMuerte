@@ -22,7 +22,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="10dp"
         android:id="@+id/etNombre"
-        android:hint="Introduce tu nombre"
+        android:hint="@string/introduce_tu_nombre"
         android:textStyle="normal|bold"
         android:textSize="14sp"
         android:textColor="@android:color/background_dark"/>
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:hint="Ex: 20 años"
+        android:hint="@string/ex_20_a_os"
         android:id="@+id/etEdad"
         android:layout_below="@+id/etNombre"
         android:layout_alignStart="@+id/cbDrogas"
@@ -140,7 +140,7 @@
         android:textColor="@android:color/background_dark"/>
 
     <CheckBox
-        android:text="Drogas"
+        android:text="@string/drogas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/cbDrogas"

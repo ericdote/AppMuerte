@@ -11,6 +11,9 @@
     <string name="mujeres_hombres">Mujeres/Hombres</string>
     <string name="cuando_voy_a_morir">Cuando voy a morir</string>
     <string name="from_date">From Date</string>
-
+    <string name="anos">años</string>
+    <string name="ex_20">Ex: 20</string>
+    <string name="introduce_tu_nombre">Introduce tu nombre</string>
+    <string name="ex_20_a_os">Ex: 20 años</string>
 
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="muerte">
+        <item> will go jogging as usual, and after the first six meters you will be run over by a trycicle at your </item>
+        <item>
+             will die on Halloween, when you will be scared by an assassin clown and you have a heart attack at your
+        </item>
+        <item> one day you will turn on the TV, Salvame will be on, and you will die traumatized at your </item>
+        <item> will get up on the forest after a crazy night and, still drunk, you will walk into the fog and fall off a cliff at your </item>
+    </string-array>
+
+</resources>

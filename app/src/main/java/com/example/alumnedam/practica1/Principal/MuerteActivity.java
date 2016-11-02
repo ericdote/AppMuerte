@@ -21,6 +21,7 @@ public class MuerteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_muerte);
         //Metemos en variables nombre, edad, y vicios
         String nombre = getIntent().getStringExtra("nombre");
+        nombre = nombre.substring(0,1).toUpperCase() + nombre.substring(1).toLowerCase();
         int edad = getIntent().getIntExtra("edad", -33);
         boolean cbDrogas = getIntent().getBooleanExtra("cbDrogas", false);
         boolean cbAlcohol = getIntent().getBooleanExtra("cbAlcohol", false);
@@ -37,7 +38,7 @@ public class MuerteActivity extends AppCompatActivity {
         //Hacemos un Random con la longitud maxima del array
         int num = (int) Math.floor(Math.random() * (mensajesMuerte.length - 0) + 0);
         //Declaramos frase como string con el nombre, el mensaje que saldra con el random, los años con los que muere
-        frase = (nombre + " " + mensajesMuerte[num] + " " + edadMuerte + " años");
+        frase = (nombre + " " + mensajesMuerte[num] + " " + edadMuerte + " " + getString(R.string.anos));
         //En caso de haber rotado la pantalla, o otro evento que reinicie la activity, se recurre al guardado que teniamos.
         if (savedInstanceState != null) {
             frase = savedInstanceState.getString("frase");
